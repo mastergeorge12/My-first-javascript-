@@ -74,3 +74,5 @@ console.log(money, typeof money);
  */
 // similarities
 console.log(null == undefined);
+
+console.log("Hi");
