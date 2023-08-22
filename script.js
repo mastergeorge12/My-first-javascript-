@@ -346,18 +346,15 @@ let mAverage = manchesterAverage / 3;
 console.log(mAverage);
 let barcelonarAverage = 88 + 91 + 110;
 let bAverage = barcelonarAverage / 3;
-console.log(bAvaerage);
-console.log(mAverage, bAverage)
+console.log(bAverage);
+console.log(mAverage, bAverage);
 //let averageScore = "mAvaerage + bAverage";
 
 if (mAverage > bAverage) {
   console.log(" manchester won the match ...........!!!!!!!!");
-} 
-else if(bAverage > mAverage){
-    console.log
-}
-
-else {
+} else if (bAverage > mAverage) {
+  console.log;
+} else {
   console.log(
     "barcelona will be the ultimate winner of the match ..................!!!!!!!!!!!"
   );
@@ -367,10 +364,44 @@ let manchesterBonusScore = 97 + 112 + 101;
 let mAverageBonusScore = manchesterBonusScore / 3;
 let barcelonaBonusScore = 109 + 95 + 123;
 let bAverageBonusScore = barcelonaBonusScore / 3;
-  console.log(mAverageBonusScore, bAverageBonusScore)
-if ( mAverageBonusScore > bAverageBonusScore && mAverageBonusScore >= 100){
-      console.log('manchester wins the trophy ')
+console.log(mAverageBonusScore, bAverageBonusScore);
+if (mAverageBonusScore > bAverageBonusScore && mAverageBonusScore >= 100) {
+  console.log("manchester wins the trophy ");
+} else if (
+  bAverageBonusScore > mAverageBonusScore &&
+  bAverageBonusScore >= 100
+) {
+  console.log(" barcelona wins the trophy 🏆");
+} else if (
+  mAverageBonusScore === bAverageBonusScore &&
+  mAverageBonusScore >= 100 &&
+  bAverageBonusScore >= 100
+) {
+  console.log("both teams win the trophy 🏆");
+} else {
+  console.log("Nobody wins the trophy 😂");
 }
-else if(bAverageBonusScore > mAverageBonusScore && ) {
 
+//*****************************  The Switch Statement ********************/
+const day = "sunday";
+switch (day) {
+  case "monday":
+    console.log("sit at home");
+    break;
+  case "tuesday":
+    console.log("attend class 👌");
+    break;
+  case "wednesday":
+    console.log("sleep 🛌");
+    break;
+  case "thursday":
+  case "friday":
+    console.log("watch movies 🎦");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log("thank God 🏰");
+    break;
+  default:
+    console.log("don't do anything");
 }
