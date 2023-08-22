@@ -279,3 +279,98 @@ if (dayOfTheWeek === "monday") {
 } else {
   console.log("write some code");
 }
+
+// ************************* type conversion and coersion ******************
+// type conversion is the process of converting a value from one type to another
+const inputYear = "1991";
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 10);
+console.log(Number("donald"));
+// convert numbers to strings
+console.log(String(23), 23);
+
+//type coersion
+// type coersion is when javascript coerces or changes a data by itself
+
+const sum = 35 + "hello";
+console.log(sum);
+
+console.log("23" - "10" - 3);
+
+console.log("24" / "2");
+
+let n = "1" + 1;
+n = n - 1;
+console.log(n);
+
+//**************************************** truthy and falsy value */
+
+//******************* we have 5 falsey values: 0, '' , undefined, null, Nan */
+console.log(boolean(0));
+console.log(boolean(""));
+console.log(boolean(undefined));
+console.log(boolean(null));
+console.log(boolean(NaN));
+
+let moneyMaker = ";";
+if (moneyMaker) {
+  console.log("buy something nice");
+}
+
+// if the value of a variable is any of the above data types (: 0, '' , undefined, null, Nan) during an expression, javascript will always implement it as 'falsey value'
+else {
+  console.log("save the money");
+}
+
+//******************* Logical Operators */
+/* logical Operators are used to determine the logc between variables or value
+&& is the AND Operator = if the both values are true the if statement runs but if one is false the else statement will run,
+|| is the OR Operator = require only one of the value to be true  compare to others with false, the if statement will automatically run
+! is the NOT Operator = cancell a value which is positive to have a negative value before u compare the statement to implement the possible value.
+
+*/
+
+const hasDriveraLincense = true;
+const hasGoodVision = true;
+const isTired = false;
+
+if (hasDriveraLincense && hasGoodVision) {
+  console.log("donald is Eligible to drive");
+} else {
+  console.log("someone else should drive");
+}
+// step 1
+
+let manchesterAverage = 96 + 108 + 89;
+let mAverage = manchesterAverage / 3;
+console.log(mAverage);
+let barcelonarAverage = 88 + 91 + 110;
+let bAverage = barcelonarAverage / 3;
+console.log(bAvaerage);
+console.log(mAverage, bAverage)
+//let averageScore = "mAvaerage + bAverage";
+
+if (mAverage > bAverage) {
+  console.log(" manchester won the match ...........!!!!!!!!");
+} 
+else if(bAverage > mAverage){
+    console.log
+}
+
+else {
+  console.log(
+    "barcelona will be the ultimate winner of the match ..................!!!!!!!!!!!"
+  );
+}
+let minimiumPoint = 100;
+let manchesterBonusScore = 97 + 112 + 101;
+let mAverageBonusScore = manchesterBonusScore / 3;
+let barcelonaBonusScore = 109 + 95 + 123;
+let bAverageBonusScore = barcelonaBonusScore / 3;
+  console.log(mAverageBonusScore, bAverageBonusScore)
+if ( mAverageBonusScore > bAverageBonusScore && mAverageBonusScore >= 100){
+      console.log('manchester wins the trophy ')
+}
+else if(bAverageBonusScore > mAverageBonusScore && ) {
+
+}
